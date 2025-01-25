@@ -82,6 +82,18 @@
     transform: scale(1.05);
   }
   
+  .services {
+    padding: 60px 20px;
+  }
+  
+  .services h1 {
+    font-weight: 700; /* Bold the text */
+    font-size: 2.5em; /* Adjust size for better visibility */
+    text-align: center; /* Center align the heading */
+    color: #111; /* Dark color for better contrast */
+    margin-bottom: 40px; /* Add space below the heading */
+  }
+  
   .services-home {
     display: flex;
     justify-content: center;
@@ -147,22 +159,46 @@
     margin: 0;
   }
   
-  .services, .contact {
+  /* Map and Address Section */
+  #map-address {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px 20px;
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+  }
+  
+  .map {
+    width: 50%;
+    height: 400px; /* Fixed height for the map */
+    border: 5px solid blue; /* Blue border for map */
+  }
+  
+  .address {
+    width: 50%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 5px solid navy; /* Navy blue border for address */
+  }
+  
+  .address h2 {
+    color: #333;
+  }
+  
+  .address p {
+    font-size: 1.1em;
+    color: #555;
+  }
+  
+  /* Contact Section */
+  .contact {
     padding: 60px 20px;
     text-align: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .services h1, .contact h1 {
-    font-size: 2.5em;
-    font-weight: 700;
-    color: #111;
-    margin-bottom: 40px;
-  }
-  
-  .services .service, .contact form {
-    margin-bottom: 30px;
   }
   
   .contact input, .contact textarea {
@@ -199,18 +235,12 @@
   }
   
   @media (max-width: 768px) {
-    .home-content h1 {
-      font-size: 2.5em;
-    }
-  
-    .services-home {
+    .container {
       flex-direction: column;
-      align-items: center;
     }
   
-    .service-box {
-      width: 90%;
-      margin-bottom: 20px;
+    .map, .address {
+      width: 100%;
     }
   
     .contact input, .contact textarea, .contact button {
