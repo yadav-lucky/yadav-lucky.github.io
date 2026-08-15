@@ -1,0 +1,23 @@
+{
+  "name": "lucky-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio of Lucky Kumar Yadav — SDET / Automation Engineer. HTML, CSS, JavaScript with a dual Node.js + PHP backend.",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "php": "php -S localhost:8000 public/router.php"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "portfolio",
+    "node",
+    "php",
+    "javascript",
+    "sdet",
+    "automation"
+  ],
+  "license": "MIT"
+}

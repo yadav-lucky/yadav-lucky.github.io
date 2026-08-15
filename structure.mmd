@@ -1,0 +1,32 @@
+flowchart TD
+    Root["Project Root (New folder)"]
+    Root --> Public["public/"]
+    Root --> Data["data/"]
+    Root --> Php["php/"]
+    Root --> Resume["resume-source/"]
+    Root --> Misc["server.js - package.json - README.md"]
+
+    Public --> Index["index.html"]
+    Public --> Css["css/style.css"]
+    Public --> Js["js/main.js"]
+    Public --> Router["router.php"]
+
+    Index -. links .-> Css
+    Index -. loads .-> Js
+
+    Data --> Profile["profile.json (resume)"]
+    Data --> Messages["messages.json (submissions)"]
+
+    Php --> Handlers["handlers.php (PHP API logic)"]
+
+    Resume --> Pdf["Lucky Kumar Yadav (1).pdf"]
+
+    Js -->|"fetch /api/profile"| Profile
+    Js -->|"POST /api/contact"| Messages
+    Router --> Handlers
+    Handlers --> Profile
+    Handlers --> Messages
+
+    Server["server.js (Node API + static)"] --> Public
+    Server --> Profile
+    Server --> Messages

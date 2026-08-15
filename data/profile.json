@@ -1,0 +1,100 @@
+{
+  "basics": {
+    "name": "Lucky Kumar Yadav",
+    "title": "Software Development Engineer in Test (SDET) / Automation Engineer",
+    "tagline": "Automation-first engineer building reliable web, real-time & AI-powered products.",
+    "location": "Noida, Uttar Pradesh, India",
+    "email": "lucky902657@gmail.com",
+    "phone": "+91 9026575414",
+    "linkedin": "https://www.linkedin.com/in/yadav-lucky",
+    "available": true,
+    "resumeFile": "resume-source/Lucky Kumar Yadav (1).pdf"
+  },
+  "summary": "Software professional with 2.7+ years of experience in automation engineering and software development environments, with hands-on experience in JavaScript, Node.js, web applications, SQL/MySQL, REST APIs, and automation. Experienced in building automation solutions, working with web-based applications, integrating APIs, managing databases, and streamlining repetitive development workflows. Familiar with OOP concepts, Next.js, Docker, Git, and AI-powered automation tools.",
+  "highlights": [
+    "2.7+ years building automation, web & real-time systems",
+    "JavaScript & Node.js across development and test workflows",
+    "REST API integration, SQL/MySQL data operations",
+    "Playwright + Postman API testing & quality automation",
+    "Docker, Git/GitHub, and AI-powered CLI tooling"
+  ],
+  "experience": [
+    {
+      "role": "Software Development Engineer in Test (SDET)",
+      "company": "Webkul Software Pvt. Ltd.",
+      "location": "Noida, Uttar Pradesh",
+      "period": "Dec 2023 — Present",
+      "current": true,
+      "points": [
+        "2.7+ years working across web applications, e-commerce platforms, real-time systems, and AI-powered solutions.",
+        "Developed automation solutions using JavaScript, Playwright, API Testing, Postman, SQL/MySQL, and REST APIs.",
+        "Worked with Node.js, HTML, CSS, OOP concepts, Git, GitHub, Docker, and AI-powered CLI tools across development and automation workflows.",
+        "Collaborated with development teams on requirements, application workflows, database operations, troubleshooting, and software delivery."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Computer Applications (MCA)",
+      "school": "CSJM University, Kanpur, Uttar Pradesh",
+      "score": "74.34%",
+      "period": "July 2023"
+    }
+  ],
+  "projects": [
+    {
+      "id": "realtime-chat",
+      "title": "Real-Time Chat System",
+      "category": "Web / Real-Time",
+      "tech": ["JavaScript", "Node.js", "HTML", "CSS", "GitHub", "Vercel"],
+      "summary": "A real-time chat application with a web-based interface, built on Node.js and deployed to the cloud.",
+      "description": "Developed a real-time chat application using JavaScript and Node.js with a web-based interface. Managed source code through GitHub and deployed the application using Vercel.",
+      "features": [
+        "WebSocket-based real-time messaging",
+        "Web-based responsive chat interface",
+        "Version-controlled with GitHub",
+        "CI/CD deployment on Vercel"
+      ],
+      "links": { "live": "", "repo": "" }
+    },
+    {
+      "id": "magento-automation",
+      "title": "E-Commerce Automation — Magento 2",
+      "category": "Automation / E-Commerce",
+      "tech": ["Magento 2", "CLI Automation", "Node.js", "JavaScript"],
+      "summary": "CLI-driven automation that streamlines repetitive Magento 2 development and operational workflows.",
+      "description": "Automated repetitive Magento 2 development and operational workflows using CLI-based automation tools. Streamlined recurring tasks to reduce manual effort and improve development efficiency.",
+      "features": [
+        "CLI automation of recurring store operations",
+        "Reduced manual effort on repetitive tasks",
+        "Improved development & operational efficiency",
+        "Scripted workflows for Magento 2 environments"
+      ],
+      "links": { "live": "", "repo": "" }
+    },
+    {
+      "id": "ai-tools-chatbots",
+      "title": "AI-Powered Tools & Chatbots",
+      "category": "AI / Web",
+      "tech": ["AI Tools", "WhatsApp AI Bots", "Headless Next.js", "Node.js"],
+      "summary": "Company projects delivering AI-powered tools and WhatsApp AI bots with headless Next.js front-ends.",
+      "description": "Worked on company projects involving AI-powered tools and WhatsApp AI bots for automated workflows and user interactions. Worked with headless Next.js applications and automation workflows for web-based solutions.",
+      "features": [
+        "WhatsApp AI bots for automated user interactions",
+        "AI-powered internal & customer-facing tools",
+        "Headless Next.js application development",
+        "Automation workflows for web-based solutions"
+      ],
+      "links": { "live": "", "repo": "" }
+    }
+  ],
+  "skills": [
+    { "group": "Programming", "items": ["JavaScript", "C++"] },
+    { "group": "Web & Backend", "items": ["HTML", "CSS", "Node.js", "Next.js"] },
+    { "group": "Software Engineering", "items": ["REST APIs", "JSON", "OOP Concepts"] },
+    { "group": "SDET & Automation", "items": ["Playwright", "API Testing", "Postman", "AI-Powered Automation (CLI Tools)"] },
+    { "group": "Database", "items": ["SQL", "MySQL"] },
+    { "group": "Tools", "items": ["Git", "GitHub", "Docker"] }
+  ],
+  "contactNote": "Open to SDET, Automation and Full-Stack opportunities. Reach out via the form or directly by email."
+}

@@ -1,0 +1,25 @@
+# ---------- Environment / secrets ----------
+# Real environment file (may contain secrets) — NEVER commit
+.env
+
+# Keep the template so others know which vars to set
+!.env.example
+
+# ---------- Private app data (do NOT share) ----------
+# Contact form submissions contain personal data (names, emails, messages)
+data/messages.json
+
+# ---------- Dependencies ----------
+node_modules/
+
+# ---------- Dev / generated artifacts ----------
+resume-source/extract.js
+resume-source/extract2.js
+resume-source/resume_text.txt
+*.log
+
+# ---------- OS / editor ----------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
