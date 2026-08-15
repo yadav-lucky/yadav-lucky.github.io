@@ -196,12 +196,13 @@ ul { list-style: none; }
 .info-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px; }
 .info-card h3 { font-size: 1.05rem; margin-bottom: 14px; }
 .info-list { display: grid; gap: 12px; }
-.info-list li { display: flex; gap: 10px; align-items: flex-start; font-size: 0.94rem; color: var(--text-dim); }
-.info-list li b { color: var(--text); font-weight: 600; min-width: 78px; }
+.info-list li { display: flex; gap: 10px; align-items: baseline; font-size: 0.94rem; color: var(--text-dim); }
+.info-list li b { color: var(--text); font-weight: 600; min-width: 78px; flex: none; }
+.info-list li span, .info-list li a { min-width: 0; overflow-wrap: anywhere; word-break: break-word; }
 .info-list a:hover { color: var(--accent); }
 
 /* Skills */
-.skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 18px; }
+.skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr)); gap: 18px; }
 .skill-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; transition: 0.25s var(--ease); }
 .skill-card:hover { transform: translateY(-4px); border-color: var(--accent); box-shadow: var(--shadow); }
 .skill-card h3 { font-size: 1rem; margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
@@ -224,7 +225,7 @@ ul { list-style: none; }
 .timeline-card li::before { content: "•"; position: absolute; left: 0; color: var(--accent); }
 
 /* Projects */
-.projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 22px; }
+.projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 22px; }
 .project-card {
   position: relative; background: var(--surface); border: 1px solid var(--border);
   border-radius: var(--radius); padding: 24px; cursor: pointer; overflow: hidden;
@@ -240,7 +241,7 @@ ul { list-style: none; }
 .project-tech .chip { font-size: 0.76rem; padding: 4px 10px; }
 
 /* Education */
-.education-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
+.education-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 20px; }
 .edu-card { display: flex; gap: 16px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px; align-items: center; }
 .edu-badge { width: 52px; height: 52px; flex: none; border-radius: 12px; display: grid; place-items: center; background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #08122b; font-weight: 800; }
 .edu-card h3 { font-size: 1.05rem; }
@@ -248,7 +249,9 @@ ul { list-style: none; }
 .edu-card .score { margin-top: 6px; font-size: 0.85rem; color: var(--accent-2); font-weight: 600; }
 
 /* Contact */
-.contact-grid { display: grid; grid-template-columns: 1.3fr 0.9fr; gap: 30px; }
+.contact-grid { display: grid; grid-template-columns: 1.3fr 0.9fr; gap: 30px; align-items: stretch; }
+.contact-side { display: flex; flex-direction: column; gap: 16px; }
+.contact-side .info-card { flex: 1 1 auto; }
 .contact-form { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 26px; }
 .field { margin-bottom: 16px; }
 .field label { display: block; font-size: 0.86rem; color: var(--text-dim); margin-bottom: 6px; }
@@ -318,6 +321,19 @@ ul { list-style: none; }
   .nav-toggle { display: flex; }
   .btn-ghost.btn-sm#downloadCv { display: none; }
   .section { padding: 60px 0; }
+}
+
+@media (max-width: 480px) {
+  .hero { padding: 64px 0 54px; }
+  .hero-inner { gap: 26px; }
+  .hero-cta { flex-direction: column; align-items: stretch; }
+  .hero-cta .btn { width: 100%; }
+  .section { padding: 52px 0; }
+  .section-head { margin-bottom: 28px; }
+  .contact-grid { gap: 22px; }
+  .contact-form { padding: 20px; }
+  .field input, .field textarea { font-size: 16px; }
+  .info-list li b { min-width: 64px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
